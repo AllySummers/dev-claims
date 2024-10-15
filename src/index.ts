@@ -287,7 +287,6 @@ export default {
 		if (Number.isNaN(quoteNumber)) {
 			quoteNumber = undefined;
 		}
-		console.log('quoteNumber', quoteNumber);
 
 		if (typeof quoteNumber === 'number' && quoteNumber > quotes.length) {
 			return new Response('Quote not found', { status: 404 });
